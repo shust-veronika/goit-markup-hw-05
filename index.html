@@ -462,5 +462,38 @@
         </div>
       </div>
     </footer>
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <button type="button" class="modal-btn">
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="form">
+          <label class="form-label"></label>
+          <span class="label-text">Name</span>
+          <input type="text" class="form-input" name="user-name" />
+          <span class="label-text">Phone</span>
+          <input type="tel" class="form-input" name="user-tel" />
+          <span class="label-text">Email</span>
+          <input type="email" class="form-input" name="user-email" />
+          <span class="label-text">Comment</span>
+          <textarea
+            name=""
+            id=""
+            cols=""
+            rows="10"
+            class="label-area"
+          ></textarea>
+          <input type="checkbox" name="" id="" />
+          <span class="chec-text"
+            >I accept the terms and conditions of the
+            <a href="" class="chec-link">Privacy Policy</a></span
+          >
+        </form>
+        <button type="submit" class="btn-send">Send</button>
+      </div>
+    </div>
   </body>
 </html>
