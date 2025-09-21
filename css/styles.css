@@ -631,19 +631,21 @@ svg footer {
 .icon-subscr {
     fill: #ffffff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-left: 16px;
 }
 
 .btn-subscr {
     border-radius: 4px;
     /*         padding-block: 8px;
         padding-inline: 24px; */
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4D5AE5;
     border: none;
     color: #FFFFFF;
     margin-left: 24px;
 
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -651,8 +653,8 @@ svg footer {
     text-align: center;
     gap: 16px;
     display: flex;
-    /*             align-items: center;
-            justify-content: center; */
+    align-items: center;
+    justify-content: center;
     padding: 8px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -669,36 +671,39 @@ svg footer {
     letter-spacing: 0.02em;
     color: #ffffff;
     padding-bottom: 16px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 input::placeholder {
-    font-weight: 400;
+   /*  font-weight: 400;
     font-size: 12px;
     line-height: 2;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04em; */
     color: #ffffff;
 }
 
 .input-subscr {
-    background-color: #2e2f42;
+    background-color:transparent;
     border: 1px solid #ffffff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    padding: 16px 8px;
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
 }
 
 .label-subscr {
-     margin-left: 80px;
+     display: flex;
 }
 
-/* .form-subscr {
+.form-subscr {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+    gap: 24px;
+}
 
 .container-subcr {
     display: flex;
@@ -827,12 +832,19 @@ outline: none;
     fill: #4d5ae5;
 }
 
+:root {
+    --form-l-color: #8e8f99;
+    --chec-la-color: #8e8f99;
+    --ch-link-color: #4D5AE5;
+}
+
+
 .form-label {
     font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        color: var(--text-color #8e8f99);
+        color: var(--form-l-color);
         display: block;
         margin-bottom: 4px;
 }
@@ -857,7 +869,7 @@ outline: none;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--text-color#8e8f99);
+    color: var(--chec-la-color);
     display: flex;
     align-items: center;
 }
@@ -913,15 +925,15 @@ outline: none;
         color: #8e8f99;
         display: flex;
         align-items: center;
-        color: var(--text-color#8e8f99);
+        color: var(--ch-link-color);
 }
 
-.chec-link {
+/* .chec-link {
     line-height: 1.33333;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: var(--text-color#4D5AE5)
-}
+} */
 
 .input-icon {
     position: absolute;
@@ -941,7 +953,7 @@ outline: none;
 
 .input-wrapper {
    /*  position: relative; */
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-check:checked /* + .chec-label > .custom-checkbox */ {
