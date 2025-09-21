@@ -953,7 +953,7 @@ outline: none;
 
 .input-wrapper {
     /* position: relative; */
-    margin-bottom: 24px;
+    margin-bottom: 8pxpx;
 }
 
 .input-wrapper.checkbox-wrapper {
@@ -988,8 +988,8 @@ outline: none;
 .custom-checkbox {
     width: 16px;
     height: 16px;
-    border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
     margin-right: 8px;
     display: inline-flex;
     align-items: center;
@@ -1001,13 +1001,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .modal-check:checked + .chec-label > .custom-checkbox {
     background-color: var(--modal-chec);
     border: none;
-    fill: var(--chec-vek);
+   /*  fill: var(--chec-vek); */
     /* opacity: 1; */
 }
 
-/* .modal-check:checked +.chec-label > .check-vector {
+.modal-check:checked +.chec-label > .check-vector {
     fill: var(--chec-vek);
-} */
+}
 
 .check-vector {
     fill: transparent;
