@@ -928,12 +928,12 @@ outline: none;
         color: var(--ch-link-color);
 }
 
-/* .chec-link {
+.chec-link {
     line-height: 1.33333;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: var(--text-color#4D5AE5)
-} */
+}
 
 .input-icon {
     position: absolute;
@@ -953,7 +953,7 @@ outline: none;
 
 .input-wrapper {
     /* position: relative; */
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 .input-wrapper.checkbox-wrapper {
