@@ -907,7 +907,7 @@ outline: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
         display: block;
-        margin: 24px auto;
+        margin: 0 auto;
 }
 
 .btn-send:hover {
@@ -957,9 +957,13 @@ outline: none;
     margin-bottom: 8px;
 }
 
-.input-wrapper.checkbox-wrapper {
+.input-wrap {
     margin-bottom: 24px;
 }
+
+/* .input-wrapper.checkbox-wrapper {
+    margin-bottom: 24px;
+} */
 
 .modal-contair {
     position: relative;
@@ -986,7 +990,7 @@ outline: none;
     padding-top: 16px;
 }
 
-.custom-checkbox {
+/* .custom-checkbox {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -997,10 +1001,18 @@ outline: none;
     justify-content: center;
     fill: transparent;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.custom-checkbox {
-    border: 1px solid rgba(46, 47, 66, 0.4);
+.customm-checkbox {
+width: 16px;
+height: 16px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 2px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
 }
 
 .modal-check:checked + .chec-label >span/* .custom-checkbox */ {
