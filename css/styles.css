@@ -971,11 +971,11 @@ outline: none;
 }
 
  .modal-check:checked  + .chec-label .check-vector  {
-    background-color: #404BBF;
+    background-color: var(--modal-chec);
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* border-color: #404BBF; */
     border: none;
-    fill: #F4F4FD;
+    fill: var(--chec-vek);
 } 
 
 :root {
